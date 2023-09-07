@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: trillian
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/tdalton-tenant/trillian/trillian@sha256:12e3ed2432d355d2fb85fbf042d2edc22128db93bc7107404a5159b6d36dc652
+        name: my-go
+        resources: {}
+status: {}
